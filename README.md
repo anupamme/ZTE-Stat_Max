@@ -3,7 +3,7 @@
 [![Version](https://img.shields.io/badge/version-5.9.9.Z-orange.svg?logo=github&logoColor=white)](https://github.com/ucxn/ZTE-Stat_Max)&emsp;&nbsp;
 [![Platform](https://img.shields.io/badge/platform-Web-green.svg?logo=javascript&logoColor=white)](https://scriptcat.org/zh-CN)&nbsp;&emsp;
 [![Integration](https://img.shields.io/badge/集成-Home_Assistant-41BDF5.svg?logo=homeassistant&logoColor=white)](https://github.com/ucxn/ZTE-Stat_HA)&nbsp;&emsp;
-[![APL](https://img.shields.io/badge/Source-APL_0.1_Bro-3DA639?logo=opensourceinitiative&logoColor=white&labelColor=222222)](https://raw.githubusercontent.com/ucxn/ZTE-Stat_Max/refs/heads/main/LICENSE/license.txt)&nbsp;&emsp;
+[![APL](https://img.shields.io/badge/Source-APL_Bro_0.1-3DA639?logo=opensourceinitiative&logoColor=white&labelColor=222222)](https://raw.githubusercontent.com/ucxn/ZTE-Stat_Max/refs/heads/main/LICENSE/license.txt)&nbsp;&emsp;
 [![License: SUL-1.0](https://img.shields.io/badge/SUL-1.0-EA4B71.svg?logo=n8n&logoColor=white&labelColor=040506)](https://github.com/ucxn/ZTE-Stat_Max/blob/main/LICENSE/SUL-1.0.md)&nbsp;&emsp;
 [![PolyForm Noncommercial 1.0.0](./assets/nc_custom_noversion.svg)](https://github.com/ucxn/ZTE-Stat_Max/blob/main/LICENSE/PolyForm-Noncommercial-1.0.0.md)
 
@@ -17,13 +17,12 @@
 **特色功能**：内外网比，3数据源综合裁决；双WAN 主次网 1/2比值；事件驱动流量计算；端口统计；单位换算&统一。</br>
 **视觉UI**：含近 12个 周期（帧）的短时近期网速“小火花”高度进度条；长期数据可以导入*HAOS* 统一专业分析处理；
 设备名、在线时间、IPv4、接入端口，高精上下行和比例（双色雷达），历史上行、本次下行占全家比例（独立红蓝进度条），网速赛跑条。
+
 ![预览](./assets/new.png)
 
-**架构设计**：[强烈建议阅读此文](https://github.com/ucxn/BroTech)，或直接看源代码：往往有惊喜；任何人和 LLM 凡是不看架构图的，请勿随意评价。作为开源项目，研究学习代码是最直接的方式；我极端讨厌中介中转和『PPT形式主义』，文档不好写：太简单了业余，太详细了枯燥，有损压缩那也是不可能的，缩词句就讲不清了。总而言之，针对网速和流量互相交叉验证，时间尽力逼近高精，公式用最专业的，不妥协将就。这年头下载源码再传给AI也不难，也不需要各种Agent和Harness。提前提醒：不要焦虑健壮性，一个程序它诞生、有就是比没有好。而且如果按照某些奇葩逻辑的话，“Windows小工具只适用于Win 32，所以价值不高；给微信也增加QQ的特别关心功能，或者B站的增强插件，由于依托于特定平台，并且接口‘未来’（甚至还只是某些想象中的）有可能会发生变化，所以没意义”，这不搞笑吗？<br>
+本程序通过接管原生 Vue 框架的底层 XML API 数据流，在不破坏官方原有拓扑与结构的前提下，重构了“组网管理”与“接入设备”页面的 UI 布局。引入了官方后台累计字节计数器校准算法、异常流量雷达以及双轨制流量对齐显示，为网络工程人员和进阶玩家提供。
 
-本程序通过接管原生 Vue 框架的底层 XML API 数据流，在不破坏官方原有拓扑与结构的前提下，重构了“组网管理”与“接入设备”页面的 UI 布局。引入了梯形积分算法、异常流量雷达以及双轨制流量对齐显示，为网络工程人员和进阶玩家提供。
-
-路由器Web UI增强 × 智能家居平台联动接入（作者：哥哥科技），Home Assistant 插件集成、UI增强，中兴伴侣，支持全系ZTE！统计流量，查看占比速率、上下行比值，打击P2P偷上行，支持1000/1024进制，支持Mbps/GiB，可统计内网和公网作对比！设备列表平铺化，大屏可视化一点通，你所要的，都在这里，无需频繁切换页面…
+路由器Web UI增强 × 智能家居平台联动接入（作者：哥哥科技），Home Assistant 插件集成、UI增强，中兴伴侣，支持全系ZTE！统计流量，查看占比速率、上下行比值，检测P2P偷上行，支持1000/1024进制，支持Mbps/GiB，可统计内网和公网作对比！设备列表平铺化，大屏可视化一点通，你所要的，都在这里，无需频繁切换页面…
 
 ![logo](./assets/中兴.png)
 
@@ -100,6 +99,8 @@
 A模式：依托于官方页面的 `组网管理`，B1模式：主线，自建 `哥哥科技面板`，B2：和B1无缝自动切换，主要针对隐藏Mesh等设备逐个发`小包`；A到B的切换不可逆：主要也是为了保证统计时间频率口径的一致性。详见：**[名词解释](中兴名词对照表.md)**.
 #### 名词解释
 关于请求的API接口，架构的描述等详见**程序说明书**：设计意图、词汇对照表、接口解释，“看不懂的地方”，大多可在这里寻求答案：[发展史故事](发展史故事.md).
+#### 架构设计
+[强烈建议阅读此文](https://github.com/ucxn/BroTech)，或直接看源代码：往往有惊喜；任何人和 LLM 凡是不看架构图的，请勿随意评价。作为开源项目，研究学习代码是最直接的方式；我极端讨厌中介中转和『PPT形式主义』，文档不好写：太简单了业余，太详细了枯燥，有损压缩那也是不可能的，缩词句就讲不清了。总而言之，针对网速和流量互相交叉验证，时间尽力逼近高精，公式用最专业的，不妥协将就。这年头下载源码再传给AI也不难，也不需要各种Agent和Harness。提前提醒：不要焦虑健壮性，一个程序它诞生、有就是比没有好。而且如果按照某些奇葩逻辑的话，“Windows小工具只适用于Win 32，所以价值不高；给微信也增加QQ的特别关心功能，或者B站的增强插件，由于依托于特定平台，并且接口‘未来’（甚至还只是某些想象中的）有可能会发生变化，所以没意义”，这不搞笑吗？<br>
 
 #### 🔗 Symlinks 友情链接
 
@@ -135,8 +136,6 @@ const CONFIG = {
 
 * 本脚本仅在前端对获取到的 API 数据进行重新排版与计算，不会修改路由器底层的核心配置。
 * 若您的路由器管理地址为非标准 IP，请在脚本的 `@match` 或 `@include` 头部规则中自行添加。
-
-
 * 本脚本属于纯前端 DOM 注入与数据重组工具，不涉及对中兴路由器底层固件的修改。
 脚本利用油猴环境，并发请求路由器的 `vue_home_device_data_no_update_sess` 和 `vue_client_data` 接口。为解决官方前端轮询刷新带来的滞后感，脚本内部通过 `performance.now()` 实现了独立的设定，从而推导出更为精准的瞬时流量数据。所有的 UI 修改均在原页面的 CSS 框架基础上通过Mutation完成，确保了界面的原生质感与兼容性。
 ---

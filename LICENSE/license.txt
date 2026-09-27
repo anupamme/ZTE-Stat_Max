@@ -1,5 +1,5 @@
-ADAPTIVE PUBLIC LICENSE 0.1 Bro
-175325443+ucxn@users.noreply.github.com
+ADAPTIVE PUBLIC LICENSE for Bro 0.1
+ucxn@outlook.com
 
 THE LICENSED WORK IS PROVIDED UNDER THE TERMS OF THIS ADAPTIVE PUBLIC LICENSE ("LICENSE"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE LICENSED WORK CONSTITUTES RECIPIENT'S 
 ACCEPTANCE OF THIS LICENSE AND ITS TERMS, WHETHER OR NOT SUCH RECIPIENT READS THE TERMS OF THIS LICENSE. "LICENSED WORK" AND "RECIPIENT" ARE DEFINED BELOW.
@@ -22,8 +22,9 @@ and (c) for selected patent licensing terms (if any) see Section 2.2 below and P
 		Designated Web Site the new URL for at least sixty (60) days.
     1.3. "DISTRIBUTOR" means any Person that distributes the Licensed Work or any portion thereof to at least one Third Party.
     1.4. "ELECTRONIC DISTRIBUTION MECHANISM" means any mechanism generally accepted in the software development community for the electronic transfer of data.
-    1.5. "EXECUTABLE" means the Licensed Work in any form other than Source Code.
-    1.6. "GOVERNING JURISDICTION" means the state, province or other legal jurisdiction identified in Part 3 of Exhibit A.
+    1.5. "EXECUTABLE" means the Licensed Work in any form other than Source Code; provided, however, that any User Script distributed in source form and intended for direct execution
+		by a userscript manager, browser, interpreter, or comparable runtime environment shall be deemed both Source Code and Executable for purposes of this License.
+    1.6. "GOVERNING JURISDICTION" means the state, city or other legal jurisdiction identified in Part 3 of Exhibit A.
     1.7. "INDEPENDENT MODULE" means a separate module of software and/or data that is not a derivative work of or copied from the Licensed Work or any portion thereof. In addition, 
 		a module does not qualify as an Independent Module but instead forms part of the Licensed Work if the module: (a) is embedded in the Licensed Work; (b) is included 
 		by reference in the Licensed Work other than by a function call or a class reference; or (c) must be included or contained, in whole or in part, within a file 
@@ -108,10 +109,10 @@ and (c) for selected patent licensing terms (if any) see Section 2.2 below and P
 
     3.2. EXECUTABLE DISTRIBUTIONS OF THE LICENSED WORK.
     A Distributor may choose to distribute the Licensed Work, or any portion thereof, in Executable form (an "EXECUTABLE DISTRIBUTION") to any third party, under the terms of Section 2 
-	of this License, provided the Executable Distribution is made available under and accompanied by a copy of this License, AND is distributed at no more than the cost of physically
-	performing Executable Distribution, AND provided at least ONE of the following conditions is fulfilled:
-        (a) The Executable Distribution must be accompanied by the Source Code for the Licensed Work making up the Executable Distribution, and the Source Code must be distributed on 
-		the same media as the Executable Distribution or using an Electronic Distribution Mechanism; or
+	of this License, provided the Executable Distribution is made available under and accompanied by a copy of this License, AND is distributed free of charge,
+	AND provided at least ONE of the following conditions is fulfilled:
+        (a) The Executable Distribution must be accompanied by, or itself constitute, the Source Code for the Licensed Work making up the Executable Distribution, and the Source Code 
+		must be distributed on the same media as the Executable Distribution or using an Electronic Distribution Mechanism; or
         (b) The Executable Distribution must be accompanied with a written offer, valid for at least thirty six (36) months, to give any third party under the terms of this License, 
 		for a charge no more than the cost of physically performing source distribution, a complete machine-readable copy of the Source Code for the Licensed Work making up 
 		the Executable Distribution, to be available and distributed using an Electronic Distribution Mechanism, and such Executable Distribution must remain available in Source 
@@ -124,7 +125,9 @@ and (c) for selected patent licensing terms (if any) see Section 2.2 below and P
     3.3. SOURCE CODE DISTRIBUTIONS.
     When a Distributor makes the Licensed Work, or any portion thereof, available to any Person in Source Code form, it must be made available under this License and a copy of this 
 	License must be included with each copy of the Source Code, situated so that the copy of the License is conspicuously brought to the attention of that Person. For greater 
-	clarification, this Section 3.3 applies to all distribution of the Licensed Work in any Source Code form. A Distributor may receive an acknowledgment, which shall be free of charge.
+	clarification, this Section 3.3 applies to all distribution of the Licensed Work in any Source Code form. A Distributor may receive acknowledgment, which shall be free of charge.
+
+	No fee may be charged for such Source Code distribution.
 
     3.4. REQUIRED NOTICES IN SOURCE CODE.
     Each Subsequent Contributor must ensure that the notice set out in Part 5 of Exhibit A is included in each file of the Source Code for each Subsequent Work originating from that 
@@ -153,8 +156,8 @@ and (c) for selected patent licensing terms (if any) see Section 2.2 below and P
     3.8. DESCRIPTION OF DISTRIBUTED MODIFICATIONS.
         (a) Each Subsequent Contributor (including the Initial Contributor where the Initial Contributor also qualifies as a Subsequent Contributor) must cause each Subsequent Work created or 
 		contributed to by that Subsequent Contributor to contain a file documenting the changes, in accordance with the requirements of Part 1 of the Supplement File, that such Subsequent 
-		Contributor made in the creation or contribution to that Subsequent Work. If no Supplement File exists or no requirements are set out in Part 1 of the Supplement File, then there 
-		are no requirements for Subsequent Contributors to document changes that they make resulting in Subsequent Works.
+		Contributor made in the creation or contribution to that Subsequent Work. If no Supplement File exists or no requirements are set out in Part 1 of the Supplement File, then Subsequent
+		Contributors shall themselves be responsible for adequately documenting any changes they make that result in Subsequent Works.
         (b) The Initial Contributor may at any time introduce requirements or add to or change earlier requirements (in each case, the "EARLIER DESCRIPTION REQUIREMENTS") for documenting changes 
 		resulting in Subsequent Works by revising Part 1 of each copy of the Supplement File distributed by the Initial Contributor with future copies of the Licensed Work so that Part 1 
 		then contains new requirements (the "NEW DESCRIPTION REQUIREMENTS") for documenting such changes.
@@ -173,22 +176,21 @@ and (c) for selected patent licensing terms (if any) see Section 2.2 below and P
         As a significant attribution to the Initial Contributor, in the hope that its promotional value may help justify the time, money and effort invested in writing the Initial Work, the 
 		Initial Contributor may include in Part 2 of the Supplement File a requirement that each time an executable program resulting from the Initial Work or any Subsequent Work, or 
 		a program dependent thereon, is launched or run, a prominent display of the Initial Contributor's attribution information must occur (the "ATTRIBUTION INFORMATION"). The 
-		Attribution Information must be included at the beginning of each Source Code file. For greater certainty, the Initial Contributor may specify in the Supplement File that the 
+		Attribution Information can be included at the beginning of each Source Code file. For greater certainty, the Initial Contributor may specify in the Supplement File that the 
 		above attribution requirement only applies to an executable program resulting from the Initial Work or any Subsequent Work, but not a program dependent thereon. The intent is 
 		to provide for PROMINENT attribution.
 
-    3.11. For greater certainty, any description or attribution provisions contained within a Supplement File may only be used to specify the nature of the description or attribution requirements, 
-	as the case may be.
+    3.11. For greater certainty, any occurrence of “哥哥科技” or “哥哥”, and any occurrence matching the pattern /\bBro(?:ther)?(?:[-_ ]?Tech)?\b/i, whether literal or in any substantially
+		equivalent representation, incorporated into or already existing in the Source Code shall not be altered or tampered with in any manner.
 
 4. COMMERCIAL USE AND INDEMNITY.
     4.1. COMMERCIAL SERVICES.
     A Recipient ("COMMERCIAL RECIPIENT") may choose to offer, and to charge a fee for, warranty, support, indemnity or liability obligations (collectively, "SERVICES") to one or more other 
 	Recipients or Distributors. However, such Commercial Recipient may do so only on that Commercial Recipient's own behalf, and not on behalf of any other Distributor or Recipient, and 
-	Commercial Recipient must make it clear than any such warranty, support, indemnity or liability obligation(s) is/are offered by Commercial Recipient alone. At no time may Commercial 
+	Commercial Recipient must make it clear that any such warranty, support, indemnity or liability obligation(s) is/are offered by Commercial Recipient alone. At no time may Commercial 
 	Recipient use any Services to deny any party the Licensed Work in Source Code or Executable form when so required under any of the other terms of this License. For greater certainty, 
 	this Section 4.1 does not diminish any of the other terms of this License, including without limitation the obligation of the Commercial Recipient as a Distributor, when distributing 
-	any of the Licensed Work in Source Code or Executable form, to make such distribution royalty-free (subject to the right to charge a fee of no more than the cost of physically performing 
-	Source Code or Executable distribution (as the case may be)).
+	any of the Licensed Work in Source Code or Executable form, to make such distribution royalty-free, Regardless of whether it is Code or Executable distribution.
 
     4.2. INDEMNITY.
     Commercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this License is intended to facilitate the 
@@ -257,8 +259,9 @@ and (c) for selected patent licensing terms (if any) see Section 2.2 below and P
 
 9. GOVERNING LAW AND LEGAL ACTION.
     9.1. This License shall be governed by and construed in accordance with the laws of the Governing Jurisdiction assigned in Part 3 of Exhibit A, without regard to its conflict of law provisions. 
-		No party may bring a legal action under this License more than Three (3) year after the cause of the action arose. Each party waives its rights (if any) to a jury trial in any litigation 
-		arising under this License. Note that if the Governing Jurisdiction is not assigned in Part 3 of Exhibit A, then the Governing Jurisdiction shall be the State of New York.
+		No party may bring a legal action under this License more than Three (3) years after the cause of the action arose; provided, however, that to the extent any applicable mandatory provision of 
+		the laws of the People's Republic of China provides otherwise, such mandatory provision shall govern. Each party waives its rights (if any) to a jury trial in any litigation arising under this
+		License. Note that if the Governing Jurisdiction is not assigned in Part 3 of Exhibit A, then the Governing Jurisdiction shall be the State of New York.
     9.2. The courts of the Governing Jurisdiction shall have jurisdiction, but not exclusive jurisdiction, to entertain and determine all disputes and claims, whether for specific performance, 
 		injunction, damages or otherwise, both at law and in equity, arising out of or in any way relating to this License, including without limitation, the legality, validity, existence 
 		and enforceability of this License. Each party to this License hereby irrevocably attorns to and accepts the jurisdiction of the courts of the Governing Jurisdiction for such purposes.
@@ -268,19 +271,22 @@ and (c) for selected patent licensing terms (if any) see Section 2.2 below and P
 10. MISCELLANEOUS.
     10.1. The obligations imposed by this License are for the benefit of the Initial Contributor and any Recipient, and each Recipient acknowledges and agrees that the Initial Contributor and/or 
 		any other Recipient may enforce the terms and conditions of this License against any Recipient.
-    10.2. Where a reference to my project already makes the relevant field or context unambiguous, the GitHub username or project name (although omission is not recommended), as well as the repository URL, may be omitted.
+    10.2. Where a reference to Bro-Tech's project already makes the relevant field or context unambiguous, the GitHub username or project name (although omission is not recommended), as well as the repository URL, may be omitted.
 		However, under no circumstances may the following four Chinese characters:
 
 		『哥哥科技』
 
 		be subject to any Removal, Alteration, Obscuration, Concealment, Replacement, Rewording, Abbreviation, Truncation, Attenuation, Reduction of Visibility, Reduction of Prominence, or Misleading Presentation.	
-		The only exception is where the environment into which the work is integrated is technically incapable of supporting UTF-8, Unicode, GB 18030, or other suitable character encodings. In such a case, "Bro-Tech"
-		may be used as a substitute, provided that the GitHub username is also included.
+		Technical difficulty may arise where the environment into which the work is integrated is technically incapable of supporting UTF-8, Unicode, GB 18030, or other suitable character encodings. In such a case,
+		"Bro-Tech" may be used as an auxiliary attribution, but not as a substitute for or modification of the existing literal 『哥哥科技』, provided that the GitHub username is also included.
 
-		The characters 哥哥科技 absolutely and unconditionally must be preserved. Under no circumstances may the prominence of the original form of attribution be reduced in any manner or to any degree. This prohibition
-		applies to any reduction whatsoever, not merely to a substantial or significant reduction in prominence. Regardless of the reason, even where technical difficulties make it impossible to preserve
-		哥哥科技 in its original form within a Larger Work, another programming language, or any other environment, you must retain another form of attribution that prominently and unambiguously identifies 哥哥科技,
-		and you must promptly notify me of the circumstances through GitHub or by email. The foregoing requirements constitute an inseparable and integral part of every right granted under this License.
+		The characters 哥哥科技 absolutely and unconditionally must be preserved in their existing literal form. Under no circumstances may the display or prominence of the original form of attribution
+		be reduced in any manner or to any degree. This prohibition applies to any reduction whatsoever, not merely to a substantial or significant reduction in prominence.
+		Regardless of the reason, even where technical difficulties make it impossible to correctly display 哥哥科技 in its original form within a Larger Work, another programming	language,
+		or any other environment, you must additionally provide another form of attribution that prominently and unambiguously identifies 哥哥科技,	and you MUST
+		promptly notify Bro-Tech of the circumstances through GitHub or by email. The foregoing requirements constitute an inseparable and integral part of every right granted under this License.
+
+		Any Recipient relying on such technical difficulty must objectively demonstrate that the inability to display Chinese results from genuine technical limitations.
 
     10.3. The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded.
     10.4. The language in all parts of this License shall be in all cases construed simply according to its fair meaning, and not strictly for or against any of the parties hereto. Any 
@@ -299,7 +305,7 @@ EXHIBIT A (to the Adaptive Public License of Bro-Tech)
     PART 1: INITIAL CONTRIBUTOR AND DESIGNATED WEB SITE
     The Initial Contributor is: 	哥哥科技 
 
-    Address of Initial Contributor: 175325443+ucxn@users.noreply.github.com,
+    Address of Initial Contributor: 175325443+ucxn@users.noreply.github.com
 
     The Designated Web Site is: 	https://github.com/ucxn/ZTE-Stat_Max
       	
@@ -307,11 +313,12 @@ EXHIBIT A (to the Adaptive Public License of Bro-Tech)
     NOTE: The Initial Contributor is to complete this Part 1, along with Parts 2, 3, and 5, and, if applicable, Parts 4 and 6.
 
     PART 2: INITIAL WORK
-    The Initial Work comprises the computer program(s) distributed by the Initial Contributor having the following title(s): “Project of 哥哥科技”“ZTE-Stat_Max”
+    The Initial Work comprises the computer program(s) distributed by the Initial Contributor having the following title(s): 
+	“Project of 哥哥科技 - ZTE-Stat_Max”
     The date on which the Initial Work was first available under this License: Sep 21, 2026
 
     PART 3: GOVERNING JURISDICTION
-    For the purposes of this License, the Governing Jurisdiction is Wuhan, P.R. China OR Hankow Municipality, GBNPA.
+    For the purposes of this License, the Governing Jurisdiction is Wuhan, P.R. China.
 
     PART 4: THIRD PARTIES
     For the purposes of this License, "Third Party" has the definition set forth below in the ONE paragraph selected by the Initial Contributor from paragraphs A, B, C, D and E when the Initial 
@@ -334,7 +341,7 @@ EXHIBIT A (to the Adaptive Public License of Bro-Tech)
     The default definition of "THIRD PARTY" is the definition set forth in paragraph A, if NONE OR MORE THAN ONE of paragraphs A, B, C, D or E in this Part 4 are selected by the Initial Contributor.
 
     PART 5: NOTICE
-	THE LICENSED WORK IS PROVIDED UNDER THE TERMS OF THE ADAPTIVE PUBLIC LICENSE ("LICENSE") AS FIRST COMPLETED BY: 哥哥科技（Bro-Tech）, 
+	THE LICENSED WORK IS PROVIDED UNDER THE TERMS OF THE ADAPTIVE PUBLIC LICENSE ("LICENSE") AS FIRST COMPLETED BY: 哥哥科技（Bro-Tech）.
  
 	ANY USE, PUBLIC DISPLAY, PUBLIC PERFORMANCE, REPRODUCTION OR DISTRIBUTION OF, OR PREPARATION OF DERIVATIVE WORKS BASED ON, THE LICENSED WORK CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS 
 	LICENSE AND ITS TERMS, WHETHER OR NOT SUCH RECIPIENT READS THE TERMS OF THE LICENSE. "LICENSED WORK" AND "RECIPIENT" ARE DEFINED IN THE LICENSE. A COPY OF THE LICENSE IS LOCATED IN THE 

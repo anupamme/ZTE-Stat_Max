@@ -37,8 +37,10 @@ URL for them above, as well as copies of any plain-text lines
 beginning with `Required Notice:` that the licensor provided
 with the software.
 
-> Required Legal Notice: Copyright 哥哥科技, Bro-Tech. &nbsp;
+> Required Notice: Copyright 哥哥科技, Bro-Tech. &nbsp;
 [github.com/ucxn/ZTE-Stat_Max](https://github.com/ucxn/ZTE-Stat_Max)
+>
+> 爱哥哥，也有个可爱的弟弟。
 
 ## Changes and New Works License
 

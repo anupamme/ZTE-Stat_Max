@@ -1,6 +1,6 @@
 # ZTE-Stat_HA by 哥哥科技（GBNPA Router Sync）
 
-[English](https://github.com/ucxn/ZTE-Stat_Max/blob/main/README_EN.md) | **简体中文**
+[English](./集成版/gbnpa_router/Readme.md) | **简体中文**
 
 *ZTE-Stat_Max* & *GBNPA-Router-Sync* 是由 **哥哥科技** 开发的一套网络数据遥测与多端转发解决方案。
 
@@ -59,7 +59,7 @@
 
 ### 阶段二：数据采集端部署
 
-1. 确保有某台 7×24 主机（Home Server）的浏览器上已安装 **[脚本猫 (ScriptCat)](https://scriptcat.org/zh-CN/script-show-page/6194)** 插件。
+1. 确保有某台 7×24 主机（Home Server）的浏览器上已安装 **[脚本猫 (ScriptCat)](https://scriptcat.org/zh-CN/script-show-page/6676)** 插件。
 2. 导入本项目提供的采集端 JS 脚本。
 3. 在脚本代码顶部的配置区，将 Webhook URL 指向你的 HA 地址：
 ```javascript
